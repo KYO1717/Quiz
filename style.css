@@ -1,0 +1,118 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* 시작 화면 스타일 */
+#start-screen {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#start-screen input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#start-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-screen button:hover {
+    background-color: #45a049;
+}
+
+/* 퀴즈 화면 스타일 */
+#quiz {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#buttons button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#buttons button:hover {
+    background-color: #45a049;
+}
+
+/* 결과 화면 스타일 */
+#result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 600px) {
+    #quiz {
+        width: 90%;
+    }
+}
+
+#image-container {
+    display: flex; /* 이미지를 가로로 나란히 배치 */
+    justify-content: center; /* 이미지를 가운데 정렬 */
+    gap: 10px; /* 이미지 간격 */
+    margin-top: 20px; /* 이미지와 입력 필드 사이의 간격 */
+}
+
+#image-container img {
+    width: 100px; /* 각 이미지의 너비 */
+    height: auto; /* 높이는 비율 유지 */
+    border-radius: 8px; /* 이미지에 둥근 모서리 추가 */
+}
