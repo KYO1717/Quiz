@@ -103,16 +103,3 @@ h1, h2 {
         width: 90%;
     }
 }
-
-#image-container {
-    display: flex; /* 이미지를 가로로 나란히 배치 */
-    justify-content: center; /* 이미지를 가운데 정렬 */
-    gap: 10px; /* 이미지 간격 */
-    margin-top: 20px; /* 이미지와 입력 필드 사이의 간격 */
-}
-
-#image-container img {
-    width: 100px; /* 각 이미지의 너비 */
-    height: auto; /* 높이는 비율 유지 */
-    border-radius: 8px; /* 이미지에 둥근 모서리 추가 */
-}
