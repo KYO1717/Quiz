@@ -3,73 +3,73 @@ const quizData = [
         type: "multiple", // 4지선다형 퀴즈
         question: "벌레에게 물렸을 때 가려움이나 통증을 느끼게 되는 원인은?",
         options: ["아세트산", "폼산", "빙초산", "탄산"],
-        correct: 0
+        correct: 1
     },
     {
         type: "multiple",
         question: "빵을 만드는 베이킹 소다의 주성분은?",
         options: ["수산화 나트륨", "수산화 마그네슘", "탄산수소 나트륨", "수산화 칼륨"],
-        correct: 1
+        correct: 2
     },
     {
         type: "multiple",
         question: "염기의 맛은?",
         options: ["신맛", "단맛", "짠맛", "쓴맛"],
-        correct: 0
+        correct: 3
     },
     {
         type: "multiple",
         question: "산이 전류가 흐르는 상태는?",
         options: ["기체", "고체", "수용액", "없다"],
-        correct: 0
+        correct: 2
     },
     {
         type: "multiple",
         question: "산과 리트머스 종이의 반응 색은?",
         options: ["푸른색", "노란색", "무색", "붉은색"],
-        correct: 0
+        correct: 3
     },
     {
         type: "multiple",
         question: "염기와 페놀프탈레인 용액의 반응 색은?",
         options: ["초록색", "푸른색", "무색", "붉은색"],
-        correct: 0
+        correct: 3
     },
     {
         type: "multiple",
         question: "산과 BTB 용액의 반응 색은?",
         options: ["푸른색", "노란색", "무색", "붉은색"],
-        correct: 0
+        correct: 1
     },
     {
         type: "multiple",
         question: "염기와 리트머스 종이의 반응 색은?",
         options: ["초록색", "푸른색", "무색", "붉은색"],
-        correct: 0
+        correct: 1
     },
     {
         type: "multiple",
         question: "산과 페놀프탈레인 용액의 반응 색은?",
         options: ["푸른색", "노란색", "무색", "붉은색"],
-        correct: 0
+        correct: 2
     },
     {
         type: "multiple",
         question: "염기와 BTB 용액의 반응 색은?",
         options: ["초록색", "푸른색", "무색", "붉은색"],
-        correct: 0
+        correct: 1
     },
     {
         type: "multiple",
         question: "산과 메틸 오렌지 용액의 반응 색은?",
         options: ["푸른색", "노란색", "무색", "붉은색"],
-        correct: 0
+        correct: 3
     },
     {
         type: "multiple",
         question: "염기와 메틸 오렌지 용액의 반응색은?",
         options: ["초록색", "노란색", "무색", "붉은색"],
-        correct: 0
+        correct: 1
     }, 
     {
         type: "ox", // OX 퀴즈
@@ -264,6 +264,7 @@ function showResults() {
     quiz.innerHTML = `<h2>${studentId} ${studentName}님</h2>` + 
                      `<h2>총 ${quizData.length}문제 중 ${score / 100}문제 정답!</h2>`;
     buttonsDiv.innerHTML = ""; // 모든 버튼을 숨김
-    result.innerHTML = `<h3>최종 점수: ${score}점</h3>`; // 최종 점수 표시
+    result.innerHTML = `<h3>최종 점수: ${score}점</h3>` + 
+           `<p style="color: blue; font-weight: bold;">점수 스크린샷 후 설문조사에 참여해주세요!</p>`; // 메시지 추가
     result.style.display = "block"; // 결과 화면 보이기
 }
