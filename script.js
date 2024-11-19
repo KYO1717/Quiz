@@ -265,6 +265,10 @@ function showResults() {
                      `<h2>총 ${quizData.length}문제 중 ${score / 100}문제 정답!</h2>`;
     buttonsDiv.innerHTML = ""; // 모든 버튼을 숨김
     result.innerHTML = `<h3>최종 점수: ${score}점</h3>` + 
-           `<p style="color: blue; font-weight: bold;">점수 스크린샷 후 설문조사에 참여해주세요!</p>`; // 메시지 추가
+           `<p style="color: blue; font-weight: bold; text-decoration: underline;">
+                           <a href="https://naver.me/FIfdTYTY" target="_blank" style="color: blue; text-decoration: underline;">
+                               점수 스크린샷 후 설문조사에 참여해주세요!
+                           </a>
+                       </p>`; // 링크 추가
     result.style.display = "block"; // 결과 화면 보이기
 }
